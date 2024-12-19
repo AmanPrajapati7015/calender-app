@@ -32,7 +32,10 @@ function EventCard({ index, event, handleDelete, handleEdit }) {
         if (now < event_startDate && canSendNotification) {
             interval = setTimeout(() => {
                 new Notification(`Reminder: ${event.title}`, { body: event.description });
+                console.log('new notification');
             }, event_startDate - now);
+            console.log('time set for'+event_startDate - now+" ms");
+            
         }
 
         return () => {
@@ -40,7 +43,7 @@ function EventCard({ index, event, handleDelete, handleEdit }) {
                 clearTimeout(interval);
             }
         };
-    }, [event]);
+    }, [event, canSendNotification]);
 
 
     return (

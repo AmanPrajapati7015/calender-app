@@ -21,7 +21,6 @@ function App() {
 }
 
 // TODO
-// 3. make notification work 
 // 5. study MUI basics
 
 // IMPORTANT 
