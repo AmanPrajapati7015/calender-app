@@ -4,6 +4,7 @@ import NavBar  from './navbar/navbar';
 import Home from './pages/homepage/homepage'
 import Dashboard from './pages/dashboard/dashboard'
 import AddEventForm from './pages/addNewEvent/addNewEvent';
+import ErrorPage from './pages/errorPage/errorPage';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path='/dashboard' element={<Dashboard/>}/>
         <Route path='/addnewform' element={<AddEventForm/>}/>
+        <Route path='/*' element={<ErrorPage/>}/>
       </Routes>
     </div>
   )
@@ -20,8 +22,8 @@ function App() {
 
 // TODO
 // 2. gey out the pased events
-// 3. add invalid url app in frontend
-// 4. deploy frontend
+// 3. make notification work 
+// 5. study MUI basics
 
 
 export default App
