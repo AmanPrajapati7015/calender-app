@@ -96,7 +96,7 @@ const AddEventForm = () => {
 
   return (
     <ThemeProvider theme={darkTheme}>
-      <Box mt={5} p={5} sx={{ boxShadow: 3, borderRadius: 2, bgcolor: 'background.paper', width: 'min-content', margin: 'auto' }}>
+      <Box mt={5} p={5} sx={{ boxShadow: 3, borderRadius: 2, bgcolor: '#121212ba', width: 'min-content', margin: 'auto' }}>
         <Typography variant="h4" component="h1" gutterBottom>
           Add New Event
         </Typography>

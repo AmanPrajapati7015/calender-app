@@ -6,13 +6,13 @@ function EventCard({index, event, handleDelete ,handleEdit}) {
     const now = new Date();
     const event_endDate =new Date(event.end_datetime);
 
-    const backgroundColor = (now < event_endDate)?'#333;':'#202020;' ;
+    const backgroundColor = (now < event_endDate)?'#3336;':'#3336' ;
     const color = (now < event_endDate)?'#fff;': '#9b9b9b' ;
 
-    
+
     return (
         
-        <Card sx={{ maxWidth: 350, margin: '20px', backgroundColor, color}}>
+        <Card sx={{ maxWidth: 350, margin: '20px', border:'1px solid #ffffff2e' , background:'none', color}}>
             <CardContent>
                 <Typography variant="h5" component="div" gutterBottom>
                     {event.title}

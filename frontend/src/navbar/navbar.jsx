@@ -21,7 +21,7 @@ function NavBar() {
             {isAuthenticated ?
                 <Stack spacing={2} direction="row" alignItems={'center'}>
                     <h3>Hi, {user.name}</h3>
-                    <Button onClick={handleLogout} variant="outlined">Log out</Button>
+                    <Button onClick={handleLogout} sx={{fontWeight:'700'}} variant="outlined">Log out</Button>
                     <Button onClick={()=>navigator('/addnewform')} variant="contained">Add Event</Button>
                 </Stack>
             :

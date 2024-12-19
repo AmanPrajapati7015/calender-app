@@ -54,7 +54,6 @@ function Dashboard() {
                         Authorization: `Bearer ${token}`
                     }
                 })
-                console.log(res.config.url);
                 setEvents(res.data);
                 setIsLoading(false);
 
@@ -83,7 +82,7 @@ function Dashboard() {
 
 function EventList({ events, handleDelete, handleEdit }) {
     return (
-        <div style={{ backgroundColor: '#121212', padding: '20px', display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
+        <div style={{padding: '20px', display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
             {events.length === 0 ? (
                 <p style={{ color: '#fff' }}>Please add a new event</p>
             ) : (
