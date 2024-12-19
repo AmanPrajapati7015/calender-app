@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom';
 import './App.css'
 import NavBar  from './navbar/navbar';
@@ -20,8 +19,9 @@ function App() {
 }
 
 // TODO
-// 2. DO THE TIME CONVERSION
-// 4. deploy
+// 2. gey out the pased events
+// 3. add invalid url app in frontend
+// 4. deploy frontend
 
 
 export default App

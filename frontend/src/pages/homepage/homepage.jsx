@@ -42,7 +42,7 @@ const LandingPage = () => {
         variant="contained"
         size="large"
       >
-        Get Started
+        {isAuthenticated ? 'Go to Dashboard' : 'Get Started'}
       </Button>
     </Box>
   );

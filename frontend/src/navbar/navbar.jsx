@@ -9,7 +9,7 @@ function NavBar() {
     const navigator = useNavigate();
     function handleLogout() {
         logout();
-        navigator('/dashboard');
+        navigator('/');
     }
 
     return (
