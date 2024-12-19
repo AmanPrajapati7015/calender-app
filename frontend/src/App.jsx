@@ -21,9 +21,10 @@ function App() {
 }
 
 // TODO
-// 2. gey out the pased events
 // 3. make notification work 
 // 5. study MUI basics
 
+// IMPORTANT 
+// connect github repo to railway backend and deploy agian
 
 export default App

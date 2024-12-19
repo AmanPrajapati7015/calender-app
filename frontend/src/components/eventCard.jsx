@@ -3,9 +3,16 @@ import { Card, CardContent, Typography, Button, Box, Stack } from '@mui/material
 
 function EventCard({index, event, handleDelete ,handleEdit}) {
     
+    const now = new Date();
+    const event_endDate =new Date(event.end_datetime);
+
+    const backgroundColor = (now < event_endDate)?'#333;':'#202020;' ;
+    const color = (now < event_endDate)?'#fff;': '#9b9b9b' ;
+
     
     return (
-        <Card sx={{ maxWidth: 350, margin: '20px', backgroundColor: '#333', color: '#fff'}}>
+        
+        <Card sx={{ maxWidth: 350, margin: '20px', backgroundColor, color}}>
             <CardContent>
                 <Typography variant="h5" component="div" gutterBottom>
                     {event.title}
