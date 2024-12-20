@@ -20,10 +20,9 @@ function App() {
   )
 }
 
-// TODO
-// 5. study MUI basics
+// 1. add title and favicon
+// 2. make cors limited
 
-// IMPORTANT 
-// connect github repo to railway backend and deploy agian
+
 
 export default App

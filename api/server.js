@@ -1,4 +1,5 @@
 
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors')
 const {expressjwt: jwt} = require('express-jwt');
@@ -11,7 +12,10 @@ const port = 3000;
 
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: process.env.FRONT_END_URL,
+  optionsSuccessStatus: 200 
+}));
 
 
 const jwtCheck = jwt({
