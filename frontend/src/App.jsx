@@ -20,8 +20,6 @@ function App() {
   )
 }
 
-// 1. add title and favicon
-// 2. make cors limited
 
 
 

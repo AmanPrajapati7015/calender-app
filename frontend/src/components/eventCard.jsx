@@ -13,6 +13,15 @@ function EventCard({ index, event, handleDelete, handleEdit }) {
 
     const color = (now < event_endDate) ? '#fff;' : '#9b9b9b';
 
+    const dateTimeOptions =  {
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit",
+        hour: "2-digit",
+        minute: "2-digit",
+      };
+      
+
     // to allow notifications
     useEffect(()=>{
         if (Notification.permission === "granted") {
@@ -54,10 +63,10 @@ function EventCard({ index, event, handleDelete, handleEdit }) {
                     {event.title}
                 </Typography>
                 <Typography variant="body2">
-                    <strong>Start:</strong> {new Date(event.start_datetime).toLocaleString()}
+                    <strong>Start:</strong> {new Date(event.start_datetime).toLocaleString(undefined, dateTimeOptions)}
                 </Typography>
                 <Typography variant="body2">
-                    <strong>End:</strong> {new Date(event.end_datetime).toLocaleString()}
+                    <strong>End:</strong> {new Date(event.end_datetime).toLocaleString(undefined, dateTimeOptions)}
                 </Typography>
                 <Typography variant="body2">
                     <strong>Description:</strong> {event.description}
